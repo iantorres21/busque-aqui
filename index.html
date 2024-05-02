@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busque Fácil</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Fundo cinza claro */
+            color: #333; /* Cor do texto */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden; /* Desabilita a rolagem vertical */
+        }
+        h2 {
+            margin-top: 50px;
+            font-size: 36px; /* Tamanho da fonte maior */
+            font-weight: bold; /* Letras mais grossas */
+            color: #7f00ff; /* Cor roxa */
+        }
+        .container {
+            background-color: #49c26d; /* Fundo verde claro */
+            border-radius: 20px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 50px auto; /* Centralizar na página */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        input[type="file"], input[type="text"], input[type="submit"] {
+            width: calc(100% - 20px); /* Largura total menos o padding */
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Borda cinza */
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #7f00ff; /* Cor roxa */
+            color: #fff; /* Texto branco */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transição suave de cor */
+        }
+        input[type="submit"]:hover {
+            background-color: #5c00b3; /* Cor roxa mais escura no hover */
+        }
+        img {
+            border-radius: 50%; /* Borda circular */
+            margin-bottom: 20px; /* Espaçamento inferior */
+        }
+        label {
+            display: block; /* Ocupa toda a largura */
+            text-align: left; /* Alinhamento do texto à esquerda */
+            margin-bottom: 5px; /* Espaçamento inferior */
+            color: #7f00ff; /* Cor roxa */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Busque Fácil</h2>
+        <img src="https://www.pagoufacil.com.br/wp-content/themes/pagoufacil/img/og-image.jpg" alt="Sua Imagem" width="200">
+        <div class="form-container">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <label for="file_path">Selecione o arquivo Excel:</label>
+                <input type="file" name="file_path" id="file_path">
+                <label for="cliente">Nome do Cliente ou CPF:</label>
+                <input type="text" name="cliente" id="cliente">
+                <br><br>
+                <input type="submit" value="Buscar Cliente">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

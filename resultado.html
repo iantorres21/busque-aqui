@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Busca</title>
+</head>
+<body>
+    <h2>Informações do Cliente:</h2>
+    <ul>
+        {% for col, value in cliente_info %}
+            <li>{{ col }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
